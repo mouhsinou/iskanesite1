@@ -394,6 +394,8 @@
     .condition-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); }
     .condition-card:hover::before { transform: scaleX(1); }
 
+    .condition-card.condition-full { grid-column: 1 / -1; }
+
     .condition-num {
       font-family: var(--font-display); font-size: 48px; font-weight: 900;
       color: var(--green-light); line-height: 1; margin-bottom: 16px;
@@ -403,10 +405,22 @@
     }
     .condition-desc { font-size: 14px; color: var(--gray-600); line-height: 1.7; }
 
+    .filiere-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .filiere-tag {
+      background: var(--green-light); color: var(--green-dark);
+      font-size: 13px; font-weight: 600; padding: 7px 14px; border-radius: 100px;
+      border: 1px solid rgba(0,166,81,0.15); white-space: nowrap;
+    }
+
+    /* ══════════════════════════════════════
+       DOCUMENTS À FOURNIR
+    ══════════════════════════════════════ */
+    #documents { background: var(--gray-50); }
+
     /* ══════════════════════════════════════
        PROCESSUS
     ══════════════════════════════════════ */
-    #processus { background: var(--gray-50); }
+    #processus { background: white; }
 
     .steps-grid {
       display: grid; grid-template-columns: repeat(5, 1fr); gap: 0;
@@ -704,6 +718,7 @@
       .hero-stats { grid-template-columns: repeat(3, 1fr); }
       .about-grid { grid-template-columns: 1fr; }
       .conditions-grid { grid-template-columns: 1fr 1fr; }
+      .condition-card.condition-full { grid-column: 1 / -1; }
       .steps-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
       .steps-grid::before { display: none; }
       .programme-content.active { grid-template-columns: 1fr; }
@@ -775,6 +790,7 @@
           <li><a href="#hero">Accueil</a></li>
           <li><a href="#about">À propos</a></li>
           <li><a href="#conditions">Bourses</a></li>
+          <li><a href="#documents">Documents</a></li>
           <li><a href="#administration">Administration</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="contact.php">Contact</a></li>
@@ -811,7 +827,7 @@
             <span class="highlight">Iskane</span><br>
             du Bénin
           </h1>
-          <p class="hero-arabic">بارك الله فيكم</p>
+          <p class="hero-arabic">أهلا و سهلا بكم</p>
           <p class="hero-desc">
             Le foyer universitaire de l'Association Pour La Solidarité Sociale. Un programme de bourses d'études supérieures prenant en compte tout ce dont les étudiants ont besoin.
           </p>
@@ -825,10 +841,6 @@
             <div class="stat-item">
               <div class="stat-number">2006</div>
               <div class="stat-label">Fondé en</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number">100%</div>
-              <div class="stat-label">Prise en charge</div>
             </div>
             <div class="stat-item">
               <div class="stat-number">🇧🇯</div>
@@ -864,7 +876,7 @@
               Les bourses d'études à Iskane sont réalisées en coopération avec l'Arabie Saoudite et sont considérées comme les plus complètes au Bénin avec plusieurs avantages.
             </p>
             <p>
-              L'objectif principal est d'offrir des chances égales aux étudiants qui réussissent, en étant intellectuellement compétents et islamiquement conscients.
+              L'objectif principal est de former des cadres intellectuellement compétents et moralement conscients.
             </p>
           </div>
           <div data-aos="fade-left">
@@ -877,11 +889,10 @@
                 </div>
               </div>
               <ul class="about-list">
-                <li><span class="icon"><i class="bi bi-check"></i></span> Formations universitaires à l'externe</li>
+                <li><span class="icon"><i class="bi bi-check"></i></span> Prise en charge de la scolarité dans les universités publiques et privées situés entre Cotonou et Abomey Calavi</li>
                 <li><span class="icon"><i class="bi bi-check"></i></span> Cours de renforcement en langue arabe</li>
                 <li><span class="icon"><i class="bi bi-check"></i></span> Notions élémentaires sur l'islam</li>
                 <li><span class="icon"><i class="bi bi-check"></i></span> Formation Professionnelle interne</li>
-                <li><span class="icon"><i class="bi bi-check"></i></span> Prise en charge des frais de scolarité</li>
                 <li><span class="icon"><i class="bi bi-check"></i></span> Logement fourni (nationaux & internationaux)</li>
                 <li><span class="icon"><i class="bi bi-check"></i></span> Accompagnement des étudiants internationaux</li>
                 <li><span class="icon"><i class="bi bi-check"></i></span> Allocation mensuelle versée aux étudiants</li>
@@ -904,12 +915,12 @@
           <div class="condition-card" data-aos="fade-up" data-aos-delay="0">
             <div class="condition-num">01</div>
             <div class="condition-title">Avoir le Baccalauréat</div>
-            <div class="condition-desc">Toutes séries confondues sont valables pour l'obtention de bourses à Iskane.</div>
+            <div class="condition-desc">Toutes séries confondues, obtenu cette année ou l'année précédente, sont valables pour l'obtention de bourses à Iskane.</div>
           </div>
           <div class="condition-card" data-aos="fade-up" data-aos-delay="100">
             <div class="condition-num">02</div>
-            <div class="condition-title">Minimum 12 de moyenne</div>
-            <div class="condition-desc">L'étudiant doit avoir une moyenne supérieure ou égale à 12 au BAC.</div>
+            <div class="condition-title">Mention Assez Bien minimum</div>
+            <div class="condition-desc">L'étudiant doit avoir obtenu au moins la mention Assez Bien au BAC (moyenne supérieure ou égale à 12).</div>
           </div>
           <div class="condition-card" data-aos="fade-up" data-aos-delay="200">
             <div class="condition-num">03</div>
@@ -930,6 +941,52 @@
             <div class="condition-num">06</div>
             <div class="condition-title">Test écrit et oral</div>
             <div class="condition-desc">Une fois sélectionné après étude du dossier, vous passerez un test écrit (QCM) et un entretien oral.</div>
+          </div>
+          <div class="condition-card condition-full" data-aos="fade-up" data-aos-delay="600">
+            <div class="condition-num">07</div>
+            <div class="condition-title">Être inscrit dans une filière éligible</div>
+            <div class="condition-desc">La bourse Iskane est réservée aux étudiants inscrits (ou en cours d'inscription) dans l'une des filières suivantes :</div>
+            <div class="filiere-tags">
+              <span class="filiere-tag">Droit</span>
+              <span class="filiere-tag">Diplomatie et Relations Internationales</span>
+              <span class="filiere-tag">Sciences Bancaires, Finance et Assurance</span>
+              <span class="filiere-tag">Journalisme</span>
+              <span class="filiere-tag">Sociologie et Anthropologie</span>
+              <span class="filiere-tag">Sciences Politiques</span>
+              <span class="filiere-tag">Sciences Économiques</span>
+              <span class="filiere-tag">Administration des Hôpitaux, des Universités et Agences Financières</span>
+              <span class="filiere-tag">Planification et Développement Local</span>
+              <span class="filiere-tag">Administration Régionale et Locale</span>
+              <span class="filiere-tag">Administration Fiscale</span>
+              <span class="filiere-tag">Administration Financière et Trésorerie</span>
+              <span class="filiere-tag">Psychologie</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Documents à fournir ── -->
+    <section id="documents">
+      <div class="container-main">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Documents</span>
+          <h2 class="section-title">Documents à fournir pour l'inscription</h2>
+          <p class="section-subtitle">Préparez ces pièces avant de soumettre votre dossier en ligne. La liste sera complétée prochainement.</p>
+        </div>
+        <div style="max-width:520px; margin:0 auto;" data-aos="fade-up">
+          <div class="about-card">
+            <div class="about-card-header">
+              <div class="about-card-icon"><i class="bi bi-file-earmark-text"></i></div>
+              <div>
+                <div class="about-card-title">Pièces à préparer</div>
+                <div class="about-card-sub">Liste des documents (à compléter)</div>
+              </div>
+            </div>
+            <ul class="about-list">
+              <li><span class="icon"><i class="bi bi-check"></i></span> Attestation du baccalauréat</li>
+              <li><span class="icon"><i class="bi bi-check"></i></span> Carte d'Identité Personnelle (CIP)</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -1184,7 +1241,7 @@
               <span class="icon"><i class="bi bi-plus"></i></span>
             </button>
             <div class="faq-answer">
-              <div class="faq-answer-inner">Tout étudiant ayant le Baccalauréat (toutes séries), une moyenne d'au moins 12, un âge maximum de 23 ans et un niveau minimal en langue arabe peut postuler.</div>
+              <div class="faq-answer-inner">Tout étudiant ayant le Baccalauréat (toutes séries) de l'année en cours ou de l'année précédente, avec au moins la mention Assez Bien, un âge maximum de 23 ans, un niveau minimal en langue arabe et inscrit dans une filière éligible peut postuler.</div>
             </div>
           </div>
 
@@ -1308,6 +1365,7 @@
             <li><a href="#hero">Accueil</a></li>
             <li><a href="#about">À propos</a></li>
             <li><a href="#conditions">Bourses</a></li>
+            <li><a href="#documents">Documents</a></li>
             <li><a href="#programmes">Programmes</a></li>
             <li><a href="#administration">Administration</a></li>
             <li><a href="#faq">FAQ</a></li>

@@ -321,6 +321,7 @@
           <li><a href="index.php">Accueil</a></li>
           <li><a href="index.php#about">À propos</a></li>
           <li><a href="index.php#conditions">Bourses</a></li>
+          <li><a href="index.php#documents">Documents</a></li>
           <li><a href="index.php#administration">Administration</a></li>
           <li><a href="index.php#faq">FAQ</a></li>
           <li><a href="contact.php" style="color: var(--green); font-weight:600;">Contact</a></li>

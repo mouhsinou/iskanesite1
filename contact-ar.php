@@ -321,6 +321,7 @@
           <li><a href="index-ar.php">الرئيسية</a></li>
           <li><a href="index-ar.php#about">من نحن</a></li>
           <li><a href="index-ar.php#conditions">المنح الدراسية</a></li>
+          <li><a href="index-ar.php#documents">الوثائق</a></li>
           <li><a href="index-ar.php#administration">الإدارة</a></li>
           <li><a href="index-ar.php#faq">الأسئلة الشائعة</a></li>
           <li><a href="contact-ar.php" style="color: var(--green); font-weight:600;">اتصل بنا</a></li>

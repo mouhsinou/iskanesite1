@@ -394,6 +394,8 @@
     .condition-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); }
     .condition-card:hover::before { transform: scaleX(1); }
 
+    .condition-card.condition-full { grid-column: 1 / -1; }
+
     .condition-num {
       font-family: var(--font-display); font-size: 48px; font-weight: 900;
       color: var(--green-light); line-height: 1; margin-bottom: 16px;
@@ -403,10 +405,22 @@
     }
     .condition-desc { font-size: 14px; color: var(--gray-600); line-height: 1.7; }
 
+    .filiere-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .filiere-tag {
+      background: var(--green-light); color: var(--green-dark);
+      font-size: 13px; font-weight: 600; padding: 7px 14px; border-radius: 100px;
+      border: 1px solid rgba(0,166,81,0.15); white-space: nowrap;
+    }
+
+    /* ══════════════════════════════════════
+       DOCUMENTS À FOURNIR
+    ══════════════════════════════════════ */
+    #documents { background: var(--gray-50); }
+
     /* ══════════════════════════════════════
        PROCESSUS
     ══════════════════════════════════════ */
-    #processus { background: var(--gray-50); }
+    #processus { background: white; }
 
     .steps-grid {
       display: grid; grid-template-columns: repeat(5, 1fr); gap: 0;
@@ -704,6 +718,7 @@
       .hero-stats { grid-template-columns: repeat(3, 1fr); }
       .about-grid { grid-template-columns: 1fr; }
       .conditions-grid { grid-template-columns: 1fr 1fr; }
+      .condition-card.condition-full { grid-column: 1 / -1; }
       .steps-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
       .steps-grid::before { display: none; }
       .programme-content.active { grid-template-columns: 1fr; }
@@ -775,6 +790,7 @@
           <li><a href="#hero">الرئيسية</a></li>
           <li><a href="#about">من نحن</a></li>
           <li><a href="#conditions">المنح الدراسية</a></li>
+          <li><a href="#documents">الوثائق</a></li>
           <li><a href="#administration">الإدارة</a></li>
           <li><a href="#faq">الأسئلة الشائعة</a></li>
           <li><a href="contact-ar.php">اتصل بنا</a></li>
@@ -811,7 +827,7 @@
             <span class="highlight">إسكان</span><br>
             بنين
           </h1>
-          <p class="hero-arabic">بارك الله فيكم</p>
+          <p class="hero-arabic">أهلا و سهلا بكم</p>
           <p class="hero-desc">
             الدار الجامعية لجمعية التضامن الاجتماعي. برنامج منح دراسية عليا يراعي كل ما يحتاجه الطلاب.
           </p>
@@ -825,10 +841,6 @@
             <div class="stat-item">
               <div class="stat-number">2006</div>
               <div class="stat-label">تأسست عام</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number">100%</div>
-              <div class="stat-label">تكفّل كامل</div>
             </div>
             <div class="stat-item">
               <div class="stat-number">🇧🇯</div>
@@ -864,7 +876,7 @@
               تُنجز المنح الدراسية في إسكان بالتعاون مع المملكة العربية السعودية، وتُعدّ من أشمل المنح في بنين بفضل مزاياها المتعددة.
             </p>
             <p>
-              الهدف الرئيسي هو إتاحة فرص متكافئة للطلاب المتفوقين، ليكونوا أكْفاء فكريًا وواعين إسلاميًا.
+              الهدف الرئيسي هو تكوين أطر ذات كفاءة فكرية ووعي أخلاقي.
             </p>
           </div>
           <div data-aos="fade-left">
@@ -877,11 +889,10 @@
                 </div>
               </div>
               <ul class="about-list">
-                <li><span class="icon"><i class="bi bi-check"></i></span> تكوين جامعي في الخارج</li>
+                <li><span class="icon"><i class="bi bi-check"></i></span> تكفّل بالرسوم الدراسية في الجامعات العمومية والخاصة الواقعة بين كوتونو وأبومي كالافي</li>
                 <li><span class="icon"><i class="bi bi-check"></i></span> دروس تقوية في اللغة العربية</li>
                 <li><span class="icon"><i class="bi bi-check"></i></span> مبادئ أساسية في الإسلام</li>
                 <li><span class="icon"><i class="bi bi-check"></i></span> تكوين مهني داخلي</li>
-                <li><span class="icon"><i class="bi bi-check"></i></span> تكفّل كامل بالرسوم الدراسية</li>
                 <li><span class="icon"><i class="bi bi-check"></i></span> سكن مؤمَّن (للوطنيين والدوليين)</li>
                 <li><span class="icon"><i class="bi bi-check"></i></span> مرافقة الطلاب الدوليين</li>
                 <li><span class="icon"><i class="bi bi-check"></i></span> منحة شهرية تُصرف للطلاب</li>
@@ -904,12 +915,12 @@
           <div class="condition-card" data-aos="fade-up" data-aos-delay="0">
             <div class="condition-num">01</div>
             <div class="condition-title">الحصول على شهادة البكالوريا</div>
-            <div class="condition-desc">جميع الشُّعب مقبولة للحصول على منح إسكان.</div>
+            <div class="condition-desc">جميع الشُّعب مقبولة، سواء بكالوريا هذه السنة أو السنة الماضية، للاستفادة من منح إسكان.</div>
           </div>
           <div class="condition-card" data-aos="fade-up" data-aos-delay="100">
             <div class="condition-num">02</div>
-            <div class="condition-title">معدل 12 على الأقل</div>
-            <div class="condition-desc">يجب أن يحصل الطالب على معدل أكبر من أو يساوي 12 في البكالوريا.</div>
+            <div class="condition-title">تقدير "حسن" على الأقل</div>
+            <div class="condition-desc">يجب أن يحصل الطالب على تقدير "حسن" على الأقل في البكالوريا (معدل أكبر من أو يساوي 12).</div>
           </div>
           <div class="condition-card" data-aos="fade-up" data-aos-delay="200">
             <div class="condition-num">03</div>
@@ -930,6 +941,52 @@
             <div class="condition-num">06</div>
             <div class="condition-title">اختبار كتابي وشفوي</div>
             <div class="condition-desc">بعد اختيارك عقب دراسة الملف، ستجتاز اختبارًا كتابيًا (اختيار من متعدد) ومقابلة شفوية.</div>
+          </div>
+          <div class="condition-card condition-full" data-aos="fade-up" data-aos-delay="600">
+            <div class="condition-num">07</div>
+            <div class="condition-title">التسجيل في إحدى التخصصات المؤهّلة</div>
+            <div class="condition-desc">منحة إسكان مخصّصة للطلاب المسجّلين (أو بصدد التسجيل) في إحدى التخصصات التالية:</div>
+            <div class="filiere-tags">
+              <span class="filiere-tag">القانون</span>
+              <span class="filiere-tag">الديبلوماسي والعلاقات الدولية</span>
+              <span class="filiere-tag">علم المصرف والمالية والتأمين</span>
+              <span class="filiere-tag">الصحافة</span>
+              <span class="filiere-tag">علم الاجتماع والأنثروبولوجي</span>
+              <span class="filiere-tag">علوم السياسة</span>
+              <span class="filiere-tag">العلوم الاقتصادية</span>
+              <span class="filiere-tag">إدارة المستشفيات والجامعات ووكالة المالية</span>
+              <span class="filiere-tag">التخطيط والتنمية المحلية</span>
+              <span class="filiere-tag">الإدارة الإقليمية والمحلية</span>
+              <span class="filiere-tag">إدارة الضرائب</span>
+              <span class="filiere-tag">إدارة المالية والخزينة</span>
+              <span class="filiere-tag">علم النفس</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Documents à fournir ── -->
+    <section id="documents">
+      <div class="container-main">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">الوثائق</span>
+          <h2 class="section-title">الوثائق المطلوبة للتسجيل</h2>
+          <p class="section-subtitle">جهّز هذه الوثائق قبل تقديم ملفك عبر الإنترنت. ستُستكمل هذه القائمة قريبًا.</p>
+        </div>
+        <div style="max-width:520px; margin:0 auto;" data-aos="fade-up">
+          <div class="about-card">
+            <div class="about-card-header">
+              <div class="about-card-icon"><i class="bi bi-file-earmark-text"></i></div>
+              <div>
+                <div class="about-card-title">الوثائق الواجب تحضيرها</div>
+                <div class="about-card-sub">قائمة الوثائق (قيد الاستكمال)</div>
+              </div>
+            </div>
+            <ul class="about-list">
+              <li><span class="icon"><i class="bi bi-check"></i></span> شهادة النجاح في البكالوريا</li>
+              <li><span class="icon"><i class="bi bi-check"></i></span> البطاقة الشخصية (CIP)</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -1184,7 +1241,7 @@
               <span class="icon"><i class="bi bi-plus"></i></span>
             </button>
             <div class="faq-answer">
-              <div class="faq-answer-inner">كل طالب حاصل على البكالوريا (جميع الشُّعب)، بمعدل لا يقل عن 12، وعمر أقصاه 23 سنة، ومستوى أدنى في اللغة العربية يمكنه التقديم.</div>
+              <div class="faq-answer-inner">كل طالب حاصل على البكالوريا (جميع الشُّعب) لهذه السنة أو للسنة الماضية، بتقدير "حسن" على الأقل، وعمر أقصاه 23 سنة، ومستوى أدنى في اللغة العربية، ومسجّل في تخصص مؤهّل يمكنه التقديم.</div>
             </div>
           </div>
 
@@ -1308,6 +1365,7 @@
             <li><a href="#hero">الرئيسية</a></li>
             <li><a href="#about">من نحن</a></li>
             <li><a href="#conditions">المنح الدراسية</a></li>
+            <li><a href="#documents">الوثائق</a></li>
             <li><a href="#programmes">البرامج</a></li>
             <li><a href="#administration">الإدارة</a></li>
             <li><a href="#faq">الأسئلة الشائعة</a></li>
