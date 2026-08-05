@@ -865,15 +865,15 @@
         <div class="section-header" data-aos="fade-up">
           <span class="section-tag">من نحن</span>
           <h2 class="section-title">من نحن؟</h2>
-          <p class="section-subtitle">برنامج منح دراسية فريد في بنين، بالتعاون مع المملكة العربية السعودية</p>
+          <p class="section-subtitle">برنامج منح دراسية فريد في بنين</p>
         </div>
         <div class="about-grid">
           <div class="about-text" data-aos="fade-right">
             <p>
-              منذ سنوات عديدة، تقدّم الدار الجامعية A2S <strong>إسكان</strong> فرص منح دراسية للطلاب الوطنيين والدوليين على حدّ سواء. انطلقت البرامج في عام <strong>2006</strong> بتنسيق مع الحكومة البنينية.
+              منذ سنوات عديدة، تقدّم الدار الجامعية <strong>إسكان</strong> فرص منح دراسية للطلاب الوطنيين والدوليين على حدّ سواء. انطلقت البرامج في عام <strong>2006</strong> بتنسيق مع الحكومة البنينية.
             </p>
             <p>
-              تُنجز المنح الدراسية في إسكان بالتعاون مع المملكة العربية السعودية، وتُعدّ من أشمل المنح في بنين بفضل مزاياها المتعددة.
+              تُنجز المنح الدراسية في إسكان بالتعاون مع جمعية A2S وشركائها، وتُعدّ من أشمل المنح في بنين بفضل مزاياها المتعددة.
             </p>
             <p>
               الهدف الرئيسي هو تكوين أطر ذات كفاءة فكرية ووعي أخلاقي.
@@ -884,7 +884,7 @@
               <div class="about-card-header">
                 <div class="about-card-icon"><i class="bi bi-award"></i></div>
                 <div>
-                  <div class="about-card-title">ما تقدّمه إسكان</div>
+                  <div class="about-card-title">ما تقدّمه الدار</div>
                   <div class="about-card-sub">مزايا البرنامج</div>
                 </div>
               </div>
@@ -895,7 +895,6 @@
                 <li><span class="icon"><i class="bi bi-check"></i></span> تكوين مهني داخلي</li>
                 <li><span class="icon"><i class="bi bi-check"></i></span> سكن مؤمَّن (للوطنيين والدوليين)</li>
                 <li><span class="icon"><i class="bi bi-check"></i></span> مرافقة الطلاب الدوليين</li>
-                <li><span class="icon"><i class="bi bi-check"></i></span> منحة شهرية تُصرف للطلاب</li>
               </ul>
             </div>
           </div>
