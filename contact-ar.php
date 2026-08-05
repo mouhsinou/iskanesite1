@@ -481,7 +481,7 @@
       <div class="container-main">
         <div class="map-card" data-aos="fade-up">
           <i class="bi bi-pin-map"></i>
-          <p>دار الطلبة الجامعية إسكان A2S</p>
+          <p>سكن الطلبة الجامعي إسكان A2S</p>
           <p><strong>زوغبادجي، كالافي — فون مانديلا سيتي، بنين</strong></p>
         </div>
       </div>
@@ -496,7 +496,7 @@
           <img src="assets/img/iskanelogo.png" alt="Iskane" class="logo-img">
           <div class="logo-text">
             <div class="name" style="color:white;">إسكان A2S</div>
-            <div class="tagline" style="color:rgba(255,255,255,0.5);">دار الطلبة الجامعية الإسلامية</div>
+            <div class="tagline" style="color:rgba(255,255,255,0.5);">سكن الطلبة الجامعي الإسلامي</div>
           </div>
         </a>
         <div class="footer-socials">

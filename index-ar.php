@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>إسكان بنين — دار الطلبة الجامعية الإسلامية A2S</title>
-  <meta name="description" content="إسكان A2S بنين — دار جامعية إسلامية تقدّم منحًا دراسية عليا للطلاب الوطنيين والدوليين.">
+  <title>إسكان بنين — سكن الطلبة الجامعي الإسلامي A2S</title>
+  <meta name="description" content="إسكان A2S بنين — سكن جامعي إسلامي يقدّم منحًا دراسية عليا للطلاب الوطنيين والدوليين.">
   <link href="assets/img/iskanelogo.png" rel="icon">
   <link href="assets/img/iskanelogo.png" rel="apple-touch-icon">
 
@@ -829,7 +829,7 @@
           </h1>
           <p class="hero-arabic">أهلا و سهلا بكم</p>
           <p class="hero-desc">
-            الدار الجامعية لجمعية التضامن الاجتماعي. برنامج منح دراسية عليا يراعي كل ما يحتاجه الطلاب.
+            السكن الجامعي لجمعية التضامن الاجتماعي. برنامج منح دراسية عليا يراعي كل ما يحتاجه الطلاب.
           </p>
           <div class="hero-btns">
             <a href="https://iskanebenin.vercel.app/register" class="btn-hero-primary">
@@ -852,7 +852,7 @@
           <div class="hero-logo-card">
             <img src="assets/img/iskanelogo.png" alt="Iskane Logo">
             <div class="card-title">إسكان A2S</div>
-            <div class="card-sub">دار الطلبة الجامعية الإسلامية</div>
+            <div class="card-sub">سكن الطلبة الجامعي الإسلامي</div>
             <div class="card-arabic">اسكان</div>
           </div>
         </div>
@@ -870,7 +870,7 @@
         <div class="about-grid">
           <div class="about-text" data-aos="fade-right">
             <p>
-              منذ سنوات عديدة، تقدّم الدار الجامعية <strong>إسكان</strong> فرص منح دراسية للطلاب الوطنيين والدوليين على حدّ سواء. انطلقت البرامج في عام <strong>2006</strong> بتنسيق مع الحكومة البنينية.
+              منذ سنوات عديدة، يقدّم السكن الجامعي <strong>إسكان</strong> فرص منح دراسية للطلاب الوطنيين والدوليين على حدّ سواء. انطلقت البرامج في عام <strong>2006</strong> بتنسيق مع الحكومة البنينية.
             </p>
             <p>
               تُنجز المنح الدراسية في إسكان بالتعاون مع جمعية A2S وشركائها، وتُعدّ من أشمل المنح في بنين بفضل مزاياها المتعددة.
@@ -884,7 +884,7 @@
               <div class="about-card-header">
                 <div class="about-card-icon"><i class="bi bi-award"></i></div>
                 <div>
-                  <div class="about-card-title">ما تقدّمه الدار</div>
+                  <div class="about-card-title">ما تقدّمه السكن</div>
                   <div class="about-card-sub">مزايا البرنامج</div>
                 </div>
               </div>
@@ -1347,7 +1347,7 @@
             <img src="assets/img/iskanelogo.png" alt="Iskane" class="logo-img">
             <div class="logo-text">
               <div class="name">إسكان A2S</div>
-              <div class="tagline">دار الطلبة الجامعية الإسلامية</div>
+              <div class="tagline">سكن الطلبة الجامعي الإسلامي</div>
             </div>
           </a>
           <p>الانضمام إلى إسكان يعني الالتزام بمسار تعليمي ثريّ وممتع. بارك الله فيكم.</p>
