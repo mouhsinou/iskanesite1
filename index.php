@@ -829,7 +829,7 @@
           </h1>
           <p class="hero-arabic">أهلا و سهلا بكم</p>
           <p class="hero-desc">
-            Le foyer universitaire de l'Association Pour La Solidarité Sociale. Un programme de bourses d'études supérieures prenant en compte tout ce dont les étudiants ont besoin.
+            Le Foyer universitaire de l'Association Pour La Solidarité Sociale. Un programme de bourses d'études supérieures prenant en compte tout ce dont les étudiants ont besoin.
           </p>
           <div class="hero-btns">
             <a href="https://iskanebenin.vercel.app/register" class="btn-hero-primary">
@@ -870,7 +870,7 @@
         <div class="about-grid">
           <div class="about-text" data-aos="fade-right">
             <p>
-              Depuis de nombreuses années, le Foyer Universitaire A2S <strong>Iskane</strong> offre des opportunités de bourses aux étudiants nationaux comme internationaux. Les programmes ont été lancés en <strong>2006</strong> sous la coordination du gouvernement béninois.
+              Depuis de nombreuses années, le Foyer Universitaire <strong>Iskane</strong> offre des opportunités de bourses aux étudiants nationaux comme internationaux. Les programmes ont été lancés en <strong>2006</strong> sous la coordination du gouvernement béninois.
             </p>
             <p>
               Les bourses d'études à Iskane sont réalisées en coopération avec l'Association A2S et ses partenaires et sont considérées comme les plus complètes au Bénin avec plusieurs avantages.
