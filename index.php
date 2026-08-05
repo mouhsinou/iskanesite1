@@ -865,7 +865,7 @@
         <div class="section-header" data-aos="fade-up">
           <span class="section-tag">À propos</span>
           <h2 class="section-title">Qui sommes-nous ?</h2>
-          <p class="section-subtitle">Un programme de bourses unique au Bénin, en coopération avec l'Arabie Saoudite</p>
+          <p class="section-subtitle">Un programme de bourses unique au Bénin</p>
         </div>
         <div class="about-grid">
           <div class="about-text" data-aos="fade-right">
@@ -873,7 +873,7 @@
               Depuis de nombreuses années, le Foyer Universitaire A2S <strong>Iskane</strong> offre des opportunités de bourses aux étudiants nationaux comme internationaux. Les programmes ont été lancés en <strong>2006</strong> sous la coordination du gouvernement béninois.
             </p>
             <p>
-              Les bourses d'études à Iskane sont réalisées en coopération avec l'Arabie Saoudite et sont considérées comme les plus complètes au Bénin avec plusieurs avantages.
+              Les bourses d'études à Iskane sont réalisées en coopération avec l'Association A2S et ses partenaires et sont considérées comme les plus complètes au Bénin avec plusieurs avantages.
             </p>
             <p>
               L'objectif principal est de former des cadres intellectuellement compétents et moralement conscients.
@@ -884,7 +884,7 @@
               <div class="about-card-header">
                 <div class="about-card-icon"><i class="bi bi-award"></i></div>
                 <div>
-                  <div class="about-card-title">Ce qu'Iskane offre</div>
+                  <div class="about-card-title">Ce que le Foyer offre</div>
                   <div class="about-card-sub">Avantages du programme</div>
                 </div>
               </div>
@@ -895,7 +895,6 @@
                 <li><span class="icon"><i class="bi bi-check"></i></span> Formation Professionnelle interne</li>
                 <li><span class="icon"><i class="bi bi-check"></i></span> Logement fourni (nationaux & internationaux)</li>
                 <li><span class="icon"><i class="bi bi-check"></i></span> Accompagnement des étudiants internationaux</li>
-                <li><span class="icon"><i class="bi bi-check"></i></span> Allocation mensuelle versée aux étudiants</li>
               </ul>
             </div>
           </div>
