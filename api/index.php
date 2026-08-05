@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>إسكان بنين — سكن الطلبة الجامعي الإسلامي A2S</title>
-  <meta name="description" content="إسكان A2S بنين — سكن جامعي إسلامي يقدّم منحًا دراسية عليا للطلاب الوطنيين والدوليين.">
-  <link href="assets/img/iskanelogo.png" rel="icon">
-  <link href="assets/img/iskanelogo.png" rel="apple-touch-icon">
+  <title>Iskane Bénin — Foyer Universitaire Islamique A2S</title>
+  <meta name="description" content="Iskane A2S Bénin — Foyer universitaire islamique offrant des bourses d'études supérieures aux étudiants nationaux et internationaux.">
+  <link href="/assets/img/iskanelogo.png" rel="icon">
+  <link href="/assets/img/iskanelogo.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Vendor -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <style>
     :root {
@@ -31,8 +31,8 @@
       --gray-100:   #F0F4F2;
       --gray-600:   #4A5E55;
       --gray-900:   #1A2E24;
-      --font-display: 'Cairo', 'Amiri', serif;
-      --font-body:    'Cairo', sans-serif;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body:    'DM Sans', sans-serif;
       --font-arabic:  'Amiri', serif;
     }
 
@@ -130,7 +130,7 @@
     #header.scrolled .mobile-nav-toggle { color: var(--gray-900); }
 
     /* ── Sélecteur de langue ── */
-    .lang-switch { position: relative; z-index: 1001; margin-right: 6px; }
+    .lang-switch { position: relative; z-index: 1001; margin-left: 6px; }
     .lang-btn {
       display: flex; align-items: center; gap: 6px;
       background: rgba(255,255,255,0.15); color: white;
@@ -146,7 +146,7 @@
     .lang-switch.open .lang-btn .bi-chevron-down { transform: rotate(180deg); }
 
     .lang-dropdown {
-      position: absolute; top: calc(100% + 10px); left: 0;
+      position: absolute; top: calc(100% + 10px); right: 0;
       background: white; border-radius: 14px;
       box-shadow: 0 8px 30px rgba(0,0,0,0.14);
       border: 1px solid var(--gray-100);
@@ -178,7 +178,7 @@
       min-height: 100vh;
       background:
         linear-gradient(135deg, rgba(0,107,53,0.92) 0%, rgba(0,166,81,0.85) 50%, rgba(0,107,53,0.95) 100%),
-        url('assets/img/iskanelogo.png') center/cover;
+        url('/assets/img/iskanelogo.png') center/cover;
       display: flex; align-items: center;
       position: relative; overflow: hidden;
     }
@@ -575,7 +575,7 @@
     }
 
     .faq-question {
-      width: 100%; text-align: right;
+      width: 100%; text-align: left;
       padding: 20px 24px; background: none; border: none; cursor: pointer;
       display: flex; align-items: center; justify-content: space-between; gap: 12px;
       font-size: 15px; font-weight: 600; color: var(--gray-900);
@@ -697,7 +697,7 @@
        SCROLL TOP
     ══════════════════════════════════════ */
     #scroll-top {
-      position: fixed; bottom: 24px; left: 24px; z-index: 999;
+      position: fixed; bottom: 24px; right: 24px; z-index: 999;
       width: 44px; height: 44px; border-radius: 50%;
       background: var(--green); color: white;
       display: flex; align-items: center; justify-content: center;
@@ -779,33 +779,33 @@
   <header id="header">
     <div class="container-nav">
       <a href="#hero" class="logo-wrap">
-        <img src="assets/img/iskanelogo.png" alt="Iskane" class="logo-img">
+        <img src="/assets/img/iskanelogo.png" alt="Iskane" class="logo-img">
         <div class="logo-text">
-          <div class="name">إسكان</div>
-          <div class="tagline">A2S · بنين</div>
+          <div class="name">Iskane</div>
+          <div class="tagline">A2S · Bénin</div>
         </div>
       </a>
       <nav class="navmenu" id="navmenu">
         <ul>
-          <li><a href="#hero">الرئيسية</a></li>
-          <li><a href="#about">من نحن</a></li>
-          <li><a href="#conditions">المنح الدراسية</a></li>
-          <li><a href="#documents">الوثائق</a></li>
-          <li><a href="#administration">الإدارة</a></li>
-          <li><a href="#faq">الأسئلة الشائعة</a></li>
-          <li><a href="contact-ar.php">اتصل بنا</a></li>
-          <li class="btn-cta"><a href="https://iskanebenin.vercel.app/register">سجّل الآن</a></li>
+          <li><a href="#hero">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#conditions">Bourses</a></li>
+          <li><a href="#documents">Documents</a></li>
+          <li><a href="#administration">Administration</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="contact.php">Contact</a></li>
+          <li class="btn-cta"><a href="https://iskanebenin.vercel.app/register">S'inscrire</a></li>
         </ul>
       </nav>
       <div class="lang-switch" id="langSwitch">
         <button class="lang-btn" id="langToggle" type="button">
           <i class="bi bi-globe2"></i>
-          <span class="lang-label">AR</span>
+          <span class="lang-label">FR</span>
           <i class="bi bi-chevron-down"></i>
         </button>
         <div class="lang-dropdown" id="langDropdown">
-          <a href="index.php" class="lang-option"><span class="flag">🇫🇷</span> Français</a>
-          <a href="index-ar.php" class="lang-option active"><span class="flag">🇸🇦</span> العربية</a>
+          <a href="index.php" class="lang-option active"><span class="flag">🇫🇷</span> Français</a>
+          <a href="index-ar.php" class="lang-option"><span class="flag">🇸🇦</span> العربية</a>
         </div>
       </div>
       <i class="bi bi-list mobile-nav-toggle" id="mobileToggle"></i>
@@ -820,39 +820,39 @@
         <div class="hero-left" data-aos="fade-right">
           <div class="hero-badge">
             <i class="bi bi-star-fill"></i>
-            منذ 2006 · بنين
+            Depuis 2006 · Bénin
           </div>
           <h1 class="hero-title">
-            مرحبًا بكم في<br>
-            <span class="highlight">إسكان</span><br>
-            بنين
+            Bienvenue à<br>
+            <span class="highlight">Iskane</span><br>
+            du Bénin
           </h1>
           <p class="hero-arabic">أهلا و سهلا بكم</p>
           <p class="hero-desc">
-            السكن الجامعي لجمعية التضامن الاجتماعي. برنامج منح دراسية عليا يراعي كل ما يحتاجه الطلاب.
+            Le Foyer universitaire de l'Association Pour La Solidarité Sociale. Un programme de bourses d'études supérieures prenant en compte tout ce dont les étudiants ont besoin.
           </p>
           <div class="hero-btns">
             <a href="https://iskanebenin.vercel.app/register" class="btn-hero-primary">
-              <i class="bi bi-pencil-square"></i> قدّم طلبك الآن
+              <i class="bi bi-pencil-square"></i> Postuler maintenant
             </a>
-            <a href="#about" class="btn-hero-secondary">اعرف المزيد</a>
+            <a href="#about" class="btn-hero-secondary">En savoir plus</a>
           </div>
           <div class="hero-stats">
             <div class="stat-item">
               <div class="stat-number">2006</div>
-              <div class="stat-label">تأسست عام</div>
+              <div class="stat-label">Fondé en</div>
             </div>
             <div class="stat-item">
               <div class="stat-number">🇧🇯</div>
-              <div class="stat-label">بنين</div>
+              <div class="stat-label">Bénin</div>
             </div>
           </div>
         </div>
         <div class="hero-right" data-aos="fade-left" data-aos-delay="200">
           <div class="hero-logo-card">
-            <img src="assets/img/iskanelogo.png" alt="Iskane Logo">
-            <div class="card-title">إسكان A2S</div>
-            <div class="card-sub">سكن الطلبة الجامعي الإسلامي</div>
+            <img src="/assets/img/iskanelogo.png" alt="Iskane Logo">
+            <div class="card-title">Iskane A2S</div>
+            <div class="card-sub">Foyer Universitaire Islamique</div>
             <div class="card-arabic">اسكان</div>
           </div>
         </div>
@@ -863,20 +863,20 @@
     <section id="about">
       <div class="container-main">
         <div class="section-header" data-aos="fade-up">
-          <span class="section-tag">من نحن</span>
-          <h2 class="section-title">من نحن؟</h2>
-          <p class="section-subtitle">برنامج منح دراسية فريد في بنين</p>
+          <span class="section-tag">À propos</span>
+          <h2 class="section-title">Qui sommes-nous ?</h2>
+          <p class="section-subtitle">Un programme de bourses unique au Bénin</p>
         </div>
         <div class="about-grid">
           <div class="about-text" data-aos="fade-right">
             <p>
-              منذ سنوات عديدة، يقدّم السكن الجامعي <strong>إسكان</strong> فرص منح دراسية للطلاب الوطنيين والدوليين على حدّ سواء. انطلقت البرامج في عام <strong>2006</strong> بتنسيق مع الحكومة البنينية.
+              Depuis de nombreuses années, le Foyer Universitaire <strong>Iskane</strong> offre des opportunités de bourses aux étudiants nationaux comme internationaux. Les programmes ont été lancés en <strong>2006</strong> sous la coordination du gouvernement béninois.
             </p>
             <p>
-              تُنجز المنح الدراسية في إسكان بالتعاون مع جمعية A2S وشركائها، وتُعدّ من أشمل المنح في بنين بفضل مزاياها المتعددة.
+              Les bourses d'études à Iskane sont réalisées en coopération avec l'Association A2S et ses partenaires et sont considérées comme les plus complètes au Bénin avec plusieurs avantages.
             </p>
             <p>
-              الهدف الرئيسي هو تكوين أطر ذات كفاءة فكرية ووعي أخلاقي.
+              L'objectif principal est de former des cadres intellectuellement compétents et moralement conscients.
             </p>
           </div>
           <div data-aos="fade-left">
@@ -884,17 +884,17 @@
               <div class="about-card-header">
                 <div class="about-card-icon"><i class="bi bi-award"></i></div>
                 <div>
-                  <div class="about-card-title">ما تقدّمه السكن</div>
-                  <div class="about-card-sub">مزايا البرنامج</div>
+                  <div class="about-card-title">Ce que le Foyer offre</div>
+                  <div class="about-card-sub">Avantages du programme</div>
                 </div>
               </div>
               <ul class="about-list">
-                <li><span class="icon"><i class="bi bi-check"></i></span> تكفّل بالرسوم الدراسية في الجامعات العمومية والخاصة الواقعة بين كوتونو وأبومي كالافي</li>
-                <li><span class="icon"><i class="bi bi-check"></i></span> دروس تقوية في اللغة العربية</li>
-                <li><span class="icon"><i class="bi bi-check"></i></span> مبادئ أساسية في الإسلام</li>
-                <li><span class="icon"><i class="bi bi-check"></i></span> تكوين مهني داخلي</li>
-                <li><span class="icon"><i class="bi bi-check"></i></span> سكن مؤمَّن (للوطنيين والدوليين)</li>
-                <li><span class="icon"><i class="bi bi-check"></i></span> مرافقة الطلاب الدوليين</li>
+                <li><span class="icon"><i class="bi bi-check"></i></span> Prise en charge de la scolarité dans les universités publiques et privées situés entre Cotonou et Abomey Calavi</li>
+                <li><span class="icon"><i class="bi bi-check"></i></span> Cours de renforcement en langue arabe</li>
+                <li><span class="icon"><i class="bi bi-check"></i></span> Notions élémentaires sur l'islam</li>
+                <li><span class="icon"><i class="bi bi-check"></i></span> Formation Professionnelle interne</li>
+                <li><span class="icon"><i class="bi bi-check"></i></span> Logement fourni (nationaux & internationaux)</li>
+                <li><span class="icon"><i class="bi bi-check"></i></span> Accompagnement des étudiants internationaux</li>
               </ul>
             </div>
           </div>
@@ -906,59 +906,59 @@
     <section id="conditions">
       <div class="container-main">
         <div class="section-header" data-aos="fade-up">
-          <span class="section-tag">المنح الدراسية</span>
-          <h2 class="section-title">شروط القبول</h2>
-          <p class="section-subtitle">للاستفادة من منحة إسكان، إليك المعايير الواجب استيفاؤها</p>
+          <span class="section-tag">Bourses</span>
+          <h2 class="section-title">Conditions d'admission</h2>
+          <p class="section-subtitle">Pour bénéficier d'une bourse Iskane, voici les critères à remplir</p>
         </div>
         <div class="conditions-grid">
           <div class="condition-card" data-aos="fade-up" data-aos-delay="0">
             <div class="condition-num">01</div>
-            <div class="condition-title">الحصول على شهادة البكالوريا</div>
-            <div class="condition-desc">جميع الشُّعب مقبولة، سواء بكالوريا هذه السنة أو السنة الماضية، للاستفادة من منح إسكان.</div>
+            <div class="condition-title">Avoir le Baccalauréat</div>
+            <div class="condition-desc">Toutes séries confondues, obtenu cette année ou l'année précédente, sont valables pour l'obtention de bourses à Iskane.</div>
           </div>
           <div class="condition-card" data-aos="fade-up" data-aos-delay="100">
             <div class="condition-num">02</div>
-            <div class="condition-title">تقدير "حسن" على الأقل</div>
-            <div class="condition-desc">يجب أن يحصل الطالب على تقدير "حسن" على الأقل في البكالوريا (معدل أكبر من أو يساوي 12).</div>
+            <div class="condition-title">Mention Assez Bien minimum</div>
+            <div class="condition-desc">L'étudiant doit avoir obtenu au moins la mention Assez Bien au BAC (moyenne supérieure ou égale à 12).</div>
           </div>
           <div class="condition-card" data-aos="fade-up" data-aos-delay="200">
             <div class="condition-num">03</div>
-            <div class="condition-title">23 سنة كحد أقصى</div>
-            <div class="condition-desc">السن الأقصى للالتحاق بإسكان هو 23 سنة كاملة.</div>
+            <div class="condition-title">Maximum 23 ans</div>
+            <div class="condition-desc">L'âge limite d'entrée à Iskane est de 23 ans révolus.</div>
           </div>
           <div class="condition-card" data-aos="fade-up" data-aos-delay="300">
             <div class="condition-num">04</div>
-            <div class="condition-title">مستوى مطلوب في اللغة العربية</div>
-            <div class="condition-desc">يتطلب الالتحاق بإسكان مستوى معينًا في اللغة العربية، يُقيَّم أثناء الاختبار.</div>
+            <div class="condition-title">Niveau en arabe requis</div>
+            <div class="condition-desc">L'entrée à Iskane exige un certain niveau en langue arabe, évalué lors du test.</div>
           </div>
           <div class="condition-card" data-aos="fade-up" data-aos-delay="400">
             <div class="condition-num">05</div>
-            <div class="condition-title">التسجيل عبر الإنترنت</div>
-            <div class="condition-desc">يتم التسجيل عبر الإنترنت كل سنتين حسب الدفعات. <a href="https://iskanebenin.vercel.app/register" style="color:var(--green);font-weight:600;">سجّل</a> الآن!</div>
+            <div class="condition-title">Inscription en ligne</div>
+            <div class="condition-desc">L'inscription se fait en ligne chaque 2 ans suivant des promotions. <a href="https://iskanebenin.vercel.app/register" style="color:var(--green);font-weight:600;">Inscrivez-vous</a> dès maintenant !</div>
           </div>
           <div class="condition-card" data-aos="fade-up" data-aos-delay="500">
             <div class="condition-num">06</div>
-            <div class="condition-title">اختبار كتابي وشفوي</div>
-            <div class="condition-desc">بعد اختيارك عقب دراسة الملف، ستجتاز اختبارًا كتابيًا (اختيار من متعدد) ومقابلة شفوية.</div>
+            <div class="condition-title">Test écrit et oral</div>
+            <div class="condition-desc">Une fois sélectionné après étude du dossier, vous passerez un test écrit (QCM) et un entretien oral.</div>
           </div>
           <div class="condition-card condition-full" data-aos="fade-up" data-aos-delay="600">
             <div class="condition-num">07</div>
-            <div class="condition-title">التسجيل في إحدى التخصصات المؤهّلة</div>
-            <div class="condition-desc">منحة إسكان مخصّصة للطلاب المسجّلين (أو بصدد التسجيل) في إحدى التخصصات التالية:</div>
+            <div class="condition-title">Être inscrit dans une filière éligible</div>
+            <div class="condition-desc">La bourse Iskane est réservée aux étudiants inscrits (ou en cours d'inscription) dans l'une des filières suivantes :</div>
             <div class="filiere-tags">
-              <span class="filiere-tag">القانون</span>
-              <span class="filiere-tag">الديبلوماسي والعلاقات الدولية</span>
-              <span class="filiere-tag">علم المصرف والمالية والتأمين</span>
-              <span class="filiere-tag">الصحافة</span>
-              <span class="filiere-tag">علم الاجتماع والأنثروبولوجي</span>
-              <span class="filiere-tag">علوم السياسة</span>
-              <span class="filiere-tag">العلوم الاقتصادية</span>
-              <span class="filiere-tag">إدارة المستشفيات والجامعات ووكالة المالية</span>
-              <span class="filiere-tag">التخطيط والتنمية المحلية</span>
-              <span class="filiere-tag">الإدارة الإقليمية والمحلية</span>
-              <span class="filiere-tag">إدارة الضرائب</span>
-              <span class="filiere-tag">إدارة المالية والخزينة</span>
-              <span class="filiere-tag">علم النفس</span>
+              <span class="filiere-tag">Droit</span>
+              <span class="filiere-tag">Diplomatie et Relations Internationales</span>
+              <span class="filiere-tag">Sciences Bancaires, Finance et Assurance</span>
+              <span class="filiere-tag">Journalisme</span>
+              <span class="filiere-tag">Sociologie et Anthropologie</span>
+              <span class="filiere-tag">Sciences Politiques</span>
+              <span class="filiere-tag">Sciences Économiques</span>
+              <span class="filiere-tag">Administration des Hôpitaux, des Universités et Agences Financières</span>
+              <span class="filiere-tag">Planification et Développement Local</span>
+              <span class="filiere-tag">Administration Régionale et Locale</span>
+              <span class="filiere-tag">Administration Fiscale</span>
+              <span class="filiere-tag">Administration Financière et Trésorerie</span>
+              <span class="filiere-tag">Psychologie</span>
             </div>
           </div>
         </div>
@@ -969,22 +969,22 @@
     <section id="documents">
       <div class="container-main">
         <div class="section-header" data-aos="fade-up">
-          <span class="section-tag">الوثائق</span>
-          <h2 class="section-title">الوثائق المطلوبة للتسجيل</h2>
-          <p class="section-subtitle">جهّز هذه الوثائق قبل تقديم ملفك عبر الإنترنت. ستُستكمل هذه القائمة قريبًا.</p>
+          <span class="section-tag">Documents</span>
+          <h2 class="section-title">Documents à fournir pour l'inscription</h2>
+          <p class="section-subtitle">Préparez ces pièces avant de soumettre votre dossier en ligne. La liste sera complétée prochainement.</p>
         </div>
         <div style="max-width:520px; margin:0 auto;" data-aos="fade-up">
           <div class="about-card">
             <div class="about-card-header">
               <div class="about-card-icon"><i class="bi bi-file-earmark-text"></i></div>
               <div>
-                <div class="about-card-title">الوثائق الواجب تحضيرها</div>
-                <div class="about-card-sub">قائمة الوثائق (قيد الاستكمال)</div>
+                <div class="about-card-title">Pièces à préparer</div>
+                <div class="about-card-sub">Liste des documents (à compléter)</div>
               </div>
             </div>
             <ul class="about-list">
-              <li><span class="icon"><i class="bi bi-check"></i></span> شهادة النجاح في البكالوريا</li>
-              <li><span class="icon"><i class="bi bi-check"></i></span> البطاقة الشخصية (CIP)</li>
+              <li><span class="icon"><i class="bi bi-check"></i></span> Attestation du baccalauréat</li>
+              <li><span class="icon"><i class="bi bi-check"></i></span> Carte d'Identité Personnelle (CIP)</li>
             </ul>
           </div>
         </div>
@@ -995,35 +995,35 @@
     <section id="processus">
       <div class="container-main">
         <div class="section-header" data-aos="fade-up">
-          <span class="section-tag">المسار</span>
-          <h2 class="section-title">كيف تسير العملية؟</h2>
-          <p class="section-subtitle">5 خطوات بسيطة للانضمام إلى عائلة إسكان</p>
+          <span class="section-tag">Processus</span>
+          <h2 class="section-title">Comment ça marche ?</h2>
+          <p class="section-subtitle">5 étapes simples pour rejoindre la famille Iskane</p>
         </div>
         <div class="steps-grid" data-aos="fade-up" data-aos-delay="100">
           <div class="step-item">
             <div class="step-circle">📝</div>
-            <div class="step-title">التسجيل</div>
-            <div class="step-desc">أنشئ حسابك على المنصة</div>
+            <div class="step-title">Inscription</div>
+            <div class="step-desc">Créez votre compte sur la plateforme</div>
           </div>
           <div class="step-item">
             <div class="step-circle">📋</div>
-            <div class="step-title">الملف</div>
-            <div class="step-desc">املأ ملفك في 6 خطوات</div>
+            <div class="step-title">Dossier</div>
+            <div class="step-desc">Remplissez votre dossier en 6 étapes</div>
           </div>
           <div class="step-item">
             <div class="step-circle">🔍</div>
-            <div class="step-title">الدراسة</div>
-            <div class="step-desc">يقوم الفريق بدراسة ملفك</div>
+            <div class="step-title">Examen</div>
+            <div class="step-desc">Votre dossier est étudié par l'équipe</div>
           </div>
           <div class="step-item">
             <div class="step-circle">✍️</div>
-            <div class="step-title">اختبار QCM</div>
-            <div class="step-desc">اختبار عبر الإنترنت عند قبول الملف</div>
+            <div class="step-title">Test QCM</div>
+            <div class="step-desc">Test en ligne si dossier retenu</div>
           </div>
           <div class="step-item">
             <div class="step-circle">🎙️</div>
-            <div class="step-title">المقابلة الشفوية</div>
-            <div class="step-desc">مقابلة عبر واتساب مع الفريق</div>
+            <div class="step-title">Entretien oral</div>
+            <div class="step-desc">Entretien WhatsApp avec l'équipe</div>
           </div>
         </div>
       </div>
@@ -1033,43 +1033,43 @@
     <section id="programmes">
       <div class="container-main">
         <div class="section-header" data-aos="fade-up">
-          <span class="section-tag">البرامج</span>
-          <h2 class="section-title">أنشطتنا</h2>
+          <span class="section-tag">Programmes</span>
+          <h2 class="section-title">Nos activités</h2>
         </div>
         <div class="programme-tabs" data-aos="fade-up">
-          <div class="programme-tab active" onclick="switchTab('cours')">برنامج الدروس</div>
-          <div class="programme-tab" onclick="switchTab('visites')">زيارات الشخصيات</div>
+          <div class="programme-tab active" onclick="switchTab('cours')">Programme de cours</div>
+          <div class="programme-tab" onclick="switchTab('visites')">Visites de personnalités</div>
         </div>
         <div class="programme-content active" id="tab-cours" data-aos="fade-up">
           <div class="programme-text">
-            <h3>الدروس والندوات في إسكان</h3>
-            <p>في إطار مسارنا، نقترح دروسًا وندوات داخلية تهدف إلى تحسين إتقان اللغة العربية واكتساب مبادئ أساسية في الإسلام.</p>
+            <h3>Cours et séminaires à Iskane</h3>
+            <p>Dans le cadre de notre déroulement, nous proposons des cours et séminaires internes visant à améliorer la maîtrise de la langue arabe ainsi qu'à l'acquisition de notions élémentaires sur l'islam.</p>
             <ul class="programme-list">
-              <li>دروس اللغة العربية — مقاربة تفاعلية وعملية</li>
-              <li>تعلّم القواعد والمفردات والنطق العربي</li>
-              <li>وحدات تكوينية حول الحديث والتوحيد والنحو</li>
-              <li>ندوات ثقافية يؤطرها خبراء</li>
-              <li>تبادل وتشارك الأفكار مع مختصين</li>
+              <li>Cours de langue arabe — approche interactive et pratique</li>
+              <li>Apprentissage du grammaire, vocabulaire et prononciation arabe</li>
+              <li>Modules de formation sur les hadiths, le tawhid, la grammaire islamique</li>
+              <li>Séminaires culturels animés par des experts</li>
+              <li>Échanges et partage d'idées avec des spécialistes</li>
             </ul>
           </div>
           <div class="programme-img">
-            <img src="assets/img/cours3.jpg" alt="Cours à Iskane">
+            <img src="/assets/img/cours3.jpg" alt="Cours à Iskane">
           </div>
         </div>
         <div class="programme-content" id="tab-visites">
           <div class="programme-text">
-            <h3>زيارات إلى كبار الشخصيات</h3>
-            <p>تنظّم إسكان بانتظام زيارات إلى شخصيات بارزة في المجال الأكاديمي والثقافي والمهني، مما يمنح الطلاب فرصة فريدة للقاء شخصيات مؤثرة.</p>
+            <h3>Visites aux grandes personnalités</h3>
+            <p>Iskane organise régulièrement des visites aux grandes personnalités du monde académique, culturel et professionnel, offrant aux étudiants l'opportunité unique de rencontrer des figures influentes.</p>
             <ul class="programme-list">
-              <li>لقاءات مع قادة ملهمين من مختلف القطاعات</li>
-              <li>نقاشات مفتوحة حول القضايا المعاصرة</li>
-              <li>قصص مسارات محفّزة للطلاب</li>
-              <li>وجهات نظر متنوعة حول العالم الأكاديمي</li>
-              <li>بناء علاقات مهنية قيّمة</li>
+              <li>Rencontres avec des leaders inspirants de divers secteurs</li>
+              <li>Discussions ouvertes sur les enjeux contemporains</li>
+              <li>Récits de parcours motivants pour les étudiants</li>
+              <li>Perspectives diversifiées sur le monde académique</li>
+              <li>Création de liens professionnels précieux</li>
             </ul>
           </div>
           <div class="programme-img">
-            <img src="assets/img/sortie1.jpg" alt="Visites personnalités">
+            <img src="/assets/img/sortie1.jpg" alt="Visites personnalités">
           </div>
         </div>
       </div>
@@ -1079,8 +1079,8 @@
     <section id="testimonials">
       <div class="container-main">
         <div class="section-header" data-aos="fade-up">
-          <span class="section-tag">الشهادات</span>
-          <h2 class="section-title">ماذا يقولون عنا</h2>
+          <span class="section-tag">Témoignages</span>
+          <h2 class="section-title">Ce qu'ils disent de nous</h2>
         </div>
         <div class="swiper swiper-testimonials" data-aos="fade-up">
           <div class="swiper-wrapper">
@@ -1088,12 +1088,12 @@
             <div class="swiper-slide">
               <div class="testimonial-card">
                 <div class="testimonial-stars">★★★★★</div>
-                <p class="testimonial-text">"غيّرت إسكان نظرتي للتعلّم. دروس اللغة العربية ديناميكية وممتعة!"</p>
+                <p class="testimonial-text">"Iskane a transformé ma vision de l'apprentissage. Les cours d'arabe sont dynamiques et engageants !"</p>
                 <div class="testimonial-author">
-                  <img src="assets/img/image6.jpeg" alt="Amir" class="testimonial-avatar">
+                  <img src="/assets/img/image6.jpeg" alt="Amir" class="testimonial-avatar">
                   <div>
-                    <div class="testimonial-name">موسى أمير</div>
-                    <div class="testimonial-role">مطوّر تطبيقات</div>
+                    <div class="testimonial-name">MOUSSA Amir</div>
+                    <div class="testimonial-role">Développeur d'Applications</div>
                   </div>
                 </div>
               </div>
@@ -1102,12 +1102,12 @@
             <div class="swiper-slide">
               <div class="testimonial-card">
                 <div class="testimonial-stars">★★★★★</div>
-                <p class="testimonial-text">"الندوات الثقافية تقدّم منظورًا جديدًا حول الثقافة العربية. تجربة مثرية جدًا!"</p>
+                <p class="testimonial-text">"Les séminaires culturels offrent une perspective inédite sur la culture arabe. Une expérience enrichissante !"</p>
                 <div class="testimonial-author">
-                  <img src="assets/img/image6.jpeg" alt="Nouhoum" class="testimonial-avatar">
+                  <img src="/assets/img/image6.jpeg" alt="Nouhoum" class="testimonial-avatar">
                   <div>
-                    <div class="testimonial-name">نوهوم ت.</div>
-                    <div class="testimonial-role">مدير موارد بشرية</div>
+                    <div class="testimonial-name">Nouhoum T.</div>
+                    <div class="testimonial-role">Manager des ressources humaines</div>
                   </div>
                 </div>
               </div>
@@ -1116,12 +1116,12 @@
             <div class="swiper-slide">
               <div class="testimonial-card">
                 <div class="testimonial-stars">★★★★★</div>
-                <p class="testimonial-text">"كانت زيارات الشخصيات رائعة. تمكّنت من الحديث مع قادة ملهمين!"</p>
+                <p class="testimonial-text">"Les visites aux personnalités ont été incroyables. J'ai pu discuter avec des leaders inspirants !"</p>
                 <div class="testimonial-author">
-                  <img src="assets/img/image6.jpeg" alt="Lawan" class="testimonial-avatar">
+                  <img src="/assets/img/image6.jpeg" alt="Lawan" class="testimonial-avatar">
                   <div>
-                    <div class="testimonial-name">لاوان ك.</div>
-                    <div class="testimonial-role">مهندس معلوماتية</div>
+                    <div class="testimonial-name">Lawan K.</div>
+                    <div class="testimonial-role">Informaticien</div>
                   </div>
                 </div>
               </div>
@@ -1130,12 +1130,12 @@
             <div class="swiper-slide">
               <div class="testimonial-card">
                 <div class="testimonial-stars">★★★★★</div>
-                <p class="testimonial-text">"جودة المدرّبين استثنائية. إنهم شغوفون ويتكيّفون مع احتياجاتنا."</p>
+                <p class="testimonial-text">"La qualité des formateurs est exceptionnelle. Ils sont passionnés et s'adaptent à nos besoins."</p>
                 <div class="testimonial-author">
-                  <img src="assets/img/image6.jpeg" alt="Mouhsine" class="testimonial-avatar">
+                  <img src="/assets/img/image6.jpeg" alt="Mouhsine" class="testimonial-avatar">
                   <div>
-                    <div class="testimonial-name">محسن م.</div>
-                    <div class="testimonial-role">عامل حر</div>
+                    <div class="testimonial-name">Mouhsine M.</div>
+                    <div class="testimonial-role">Freelancer</div>
                   </div>
                 </div>
               </div>
@@ -1144,12 +1144,12 @@
             <div class="swiper-slide">
               <div class="testimonial-card">
                 <div class="testimonial-stars">★★★★★</div>
-                <p class="testimonial-text">"غيّرت المنح الدراسية التي تقدّمها إسكان حياتي. أستطيع اليوم متابعة أحلامي الأكاديمية."</p>
+                <p class="testimonial-text">"Les bourses d'études offertes par Iskane ont changé ma vie. Je peux poursuivre mes rêves académiques."</p>
                 <div class="testimonial-author">
-                  <img src="assets/img/image6.jpeg" alt="Abdoul-aziz" class="testimonial-avatar">
+                  <img src="/assets/img/image6.jpeg" alt="Abdoul-aziz" class="testimonial-avatar">
                   <div>
-                    <div class="testimonial-name">عبد العزيز ت.</div>
-                    <div class="testimonial-role">رائد أعمال</div>
+                    <div class="testimonial-name">Abdoul-aziz T.</div>
+                    <div class="testimonial-role">Entrepreneur</div>
                   </div>
                 </div>
               </div>
@@ -1165,13 +1165,13 @@
     <section id="administration">
       <div class="container-main">
         <div class="section-header" data-aos="fade-up">
-          <span class="section-tag">الإدارة</span>
-          <h2 class="section-title">فريقنا الإداري</h2>
+          <span class="section-tag">Administration</span>
+          <h2 class="section-title">Notre équipe administrative</h2>
         </div>
         <div class="team-grid">
           <div class="team-card" data-aos="fade-up" data-aos-delay="0">
             <div class="team-img-wrap">
-              <img src="assets/img/moudir.jpg" alt="CHITOU Chouaib">
+              <img src="/assets/img/moudir.jpg" alt="CHITOU Chouaib">
               <div class="team-overlay">
                 <div class="team-socials">
                   <a href=""><i class="bi bi-whatsapp"></i></a>
@@ -1182,13 +1182,13 @@
               </div>
             </div>
             <div class="team-info">
-              <div class="team-name">شيتو شعيب</div>
-              <div class="team-role">المدير التنفيذي</div>
+              <div class="team-name">CHITOU Chouaib</div>
+              <div class="team-role">Directeur Exécutif</div>
             </div>
           </div>
           <div class="team-card" data-aos="fade-up" data-aos-delay="100">
             <div class="team-img-wrap">
-              <img src="assets/img/houdou.jpg" alt="IMOROU MAMA HOUDOU">
+              <img src="/assets/img/houdou.jpg" alt="IMOROU MAMA HOUDOU">
               <div class="team-overlay">
                 <div class="team-socials">
                   <a href=""><i class="bi bi-whatsapp"></i></a>
@@ -1199,13 +1199,13 @@
               </div>
             </div>
             <div class="team-info">
-              <div class="team-name">إيمورو ماما هودو</div>
-              <div class="team-role">المشرف التربوي</div>
+              <div class="team-name">IMOROU MAMA HOUDOU</div>
+              <div class="team-role">Superviseur Éducatif</div>
             </div>
           </div>
           <div class="team-card" data-aos="fade-up" data-aos-delay="200">
             <div class="team-img-wrap">
-              <img src="assets/img/sirouz.jpg" alt="MOHAMED SORI Sirouz Manne">
+              <img src="/assets/img/sirouz.jpg" alt="MOHAMED SORI Sirouz Manne">
               <div class="team-overlay">
                 <div class="team-socials">
                   <a href="https://wa.me/qr/U7QZLHCO3VHWK1"><i class="bi bi-whatsapp"></i></a>
@@ -1216,8 +1216,8 @@
               </div>
             </div>
             <div class="team-info">
-              <div class="team-name">محمد صوري سيروز مان</div>
-              <div class="team-role">المشرف الأكاديمي</div>
+              <div class="team-name">MOHAMED SORI Sirouz Manne</div>
+              <div class="team-role">Superviseur Académique</div>
             </div>
           </div>
         </div>
@@ -1228,89 +1228,89 @@
     <section id="faq">
       <div class="container-main">
         <div class="section-header" data-aos="fade-up">
-          <span class="section-tag">الأسئلة الشائعة</span>
-          <h2 class="section-title">أسئلة متكررة</h2>
-          <p class="section-subtitle">كل ما تحتاج معرفته عن إسكان ومنحها الدراسية</p>
+          <span class="section-tag">FAQ</span>
+          <h2 class="section-title">Questions fréquentes</h2>
+          <p class="section-subtitle">Tout ce que vous devez savoir sur Iskane et ses bourses</p>
         </div>
         <div class="faq-grid" data-aos="fade-up">
 
           <div class="faq-item">
             <button class="faq-question" onclick="toggleFaq(this)">
-              من يمكنه التقديم إلى إسكان؟
+              Qui peut postuler à Iskane ?
               <span class="icon"><i class="bi bi-plus"></i></span>
             </button>
             <div class="faq-answer">
-              <div class="faq-answer-inner">كل طالب حاصل على البكالوريا (جميع الشُّعب) لهذه السنة أو للسنة الماضية، بتقدير "حسن" على الأقل، وعمر أقصاه 23 سنة، ومستوى أدنى في اللغة العربية، ومسجّل في تخصص مؤهّل يمكنه التقديم.</div>
+              <div class="faq-answer-inner">Tout étudiant ayant le Baccalauréat (toutes séries) de l'année en cours ou de l'année précédente, avec au moins la mention Assez Bien, un âge maximum de 23 ans, un niveau minimal en langue arabe et inscrit dans une filière éligible peut postuler.</div>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question" onclick="toggleFaq(this)">
-              هل تغطي المنحة جميع المصاريف؟
+              La bourse couvre-t-elle tous les frais ?
               <span class="icon"><i class="bi bi-plus"></i></span>
             </button>
             <div class="faq-answer">
-              <div class="faq-answer-inner">نعم. تتكفّل إسكان بالرسوم الدراسية والسكن والمنحة الشهرية، وتُرافق الطلاب الدوليين خلال سفرهم.</div>
+              <div class="faq-answer-inner">Oui. Iskane prend en charge les frais de scolarité, le logement, une allocation mensuelle et accompagne les étudiants internationaux lors de leur voyage.</div>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question" onclick="toggleFaq(this)">
-              كيف تسير عملية الاختيار؟
+              Comment se déroule le processus de sélection ?
               <span class="icon"><i class="bi bi-plus"></i></span>
             </button>
             <div class="faq-answer">
-              <div class="faq-answer-inner">التسجيل عبر الإنترنت ← تقديم الملف ← دراسة من طرف الفريق ← اختبار QCM عبر الإنترنت ← مقابلة شفوية عبر واتساب ← القرار النهائي.</div>
+              <div class="faq-answer-inner">Inscription en ligne → soumission du dossier → étude par l'équipe → test QCM en ligne → entretien oral via WhatsApp → décision finale.</div>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question" onclick="toggleFaq(this)">
-              ما هي مدة المنحة؟
+              Quelle est la durée de la bourse ?
               <span class="icon"><i class="bi bi-plus"></i></span>
             </button>
             <div class="faq-answer">
-              <div class="faq-answer-inner">ترتبط المدة بمدة تكوينك الجامعي. تُرافقك إسكان طوال مسارك الأكاديمي.</div>
+              <div class="faq-answer-inner">La durée est liée à celle de votre formation universitaire. Iskane vous accompagne tout au long de votre parcours académique.</div>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question" onclick="toggleFaq(this)">
-              هل يجب أن تكون الجنسية بنينية؟
+              Faut-il être de nationalité béninoise ?
               <span class="icon"><i class="bi bi-plus"></i></span>
             </button>
             <div class="faq-answer">
-              <div class="faq-answer-inner">لا. تستقبل إسكان طلابًا وطنيين ودوليين. البرنامج مفتوح لجميع الملفات المستحقة.</div>
+              <div class="faq-answer-inner">Non. Iskane accueille des étudiants nationaux et internationaux. Le programme est ouvert à tous les profils méritants.</div>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question" onclick="toggleFaq(this)">
-              متى تُفتح باب الترشيحات؟
+              Quand sont ouvertes les candidatures ?
               <span class="icon"><i class="bi bi-plus"></i></span>
             </button>
             <div class="faq-answer">
-              <div class="faq-answer-inner">تُفتح حملات التوظيف كل سنتين. سجّل في المنصة لتصلك إشعار عند فتح باب الترشيحات.</div>
+              <div class="faq-answer-inner">Les campagnes de recrutement sont ouvertes tous les 2 ans. Inscrivez-vous sur la plateforme pour être notifié dès l'ouverture des candidatures.</div>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question" onclick="toggleFaq(this)">
-              هل يُجرى اختبار QCM عبر الإنترنت؟
+              Le test QCM se passe-t-il en ligne ?
               <span class="icon"><i class="bi bi-plus"></i></span>
             </button>
             <div class="faq-answer">
-              <div class="faq-answer-inner">نعم. يُجرى اختبار QCM بالكامل عبر الإنترنت على منصتنا الآمنة. ستتلقى رمز تحقق عبر البريد الإلكتروني للولوج إليه.</div>
+              <div class="faq-answer-inner">Oui. Le test QCM est entièrement en ligne sur notre plateforme sécurisée. Vous recevrez un code de vérification par email pour y accéder.</div>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question" onclick="toggleFaq(this)">
-              كيف تسير المقابلة الشفوية؟
+              Comment se déroule l'entretien oral ?
               <span class="icon"><i class="bi bi-plus"></i></span>
             </button>
             <div class="faq-answer">
-              <div class="faq-answer-inner">تُجرى المقابلة الشفوية عبر واتساب مع ممتحن من فريق إسكان. ستتلقى رابطًا والتفاصيل عبر البريد الإلكتروني.</div>
+              <div class="faq-answer-inner">L'entretien oral se déroule via WhatsApp avec un examinateur de l'équipe Iskane. Vous recevrez un lien et les détails par email.</div>
             </div>
           </div>
 
@@ -1323,14 +1323,14 @@
       <div class="container-main">
         <div class="cta-inner">
           <div class="cta-text" data-aos="fade-right">
-            <h2>مستعد للانضمام إلى إسكان؟</h2>
-            <p>أنشئ حسابك وقدّم ملفك ابتداءً من اليوم.</p>
+            <h2>Prêt(e) à rejoindre Iskane ?</h2>
+            <p>Créez votre compte et soumettez votre dossier dès aujourd'hui.</p>
           </div>
           <div class="cta-btns" data-aos="fade-left">
             <a href="https://iskanebenin.vercel.app/register" class="btn-cta-gold">
-              <i class="bi bi-pencil-square"></i> سجّل الآن
+              <i class="bi bi-pencil-square"></i> S'inscrire maintenant
             </a>
-            <a href="contact-ar.php" class="btn-cta-outline">اتصل بنا</a>
+            <a href="contact.php" class="btn-cta-outline">Nous contacter</a>
           </div>
         </div>
       </div>
@@ -1344,13 +1344,13 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="#hero" class="logo-wrap">
-            <img src="assets/img/iskanelogo.png" alt="Iskane" class="logo-img">
+            <img src="/assets/img/iskanelogo.png" alt="Iskane" class="logo-img">
             <div class="logo-text">
-              <div class="name">إسكان A2S</div>
-              <div class="tagline">سكن الطلبة الجامعي الإسلامي</div>
+              <div class="name">Iskane A2S</div>
+              <div class="tagline">Foyer Universitaire Islamique</div>
             </div>
           </a>
-          <p>الانضمام إلى إسكان يعني الالتزام بمسار تعليمي ثريّ وممتع. بارك الله فيكم.</p>
+          <p>Rejoindre Iskane, c'est s'engager dans un parcours d'apprentissage enrichissant et passionnant. Barakallahu Fikum.</p>
           <div class="footer-socials">
             <a href=""><i class="bi bi-telegram"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -1359,36 +1359,36 @@
           </div>
         </div>
         <div class="footer-col">
-          <h4>التنقل</h4>
+          <h4>Navigation</h4>
           <ul>
-            <li><a href="#hero">الرئيسية</a></li>
-            <li><a href="#about">من نحن</a></li>
-            <li><a href="#conditions">المنح الدراسية</a></li>
-            <li><a href="#documents">الوثائق</a></li>
-            <li><a href="#programmes">البرامج</a></li>
-            <li><a href="#administration">الإدارة</a></li>
-            <li><a href="#faq">الأسئلة الشائعة</a></li>
+            <li><a href="#hero">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#conditions">Bourses</a></li>
+            <li><a href="#documents">Documents</a></li>
+            <li><a href="#programmes">Programmes</a></li>
+            <li><a href="#administration">Administration</a></li>
+            <li><a href="#faq">FAQ</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>المنصة</h4>
+          <h4>Plateforme</h4>
           <ul>
-            <li><a href="https://iskanebenin.vercel.app/register">التسجيل</a></li>
-            <li><a href="https://iskanebenin.vercel.app/login">تسجيل الدخول</a></li>
-            <li><a href="contact-ar.php">اتصل بنا</a></li>
+            <li><a href="https://iskanebenin.vercel.app/register">S'inscrire</a></li>
+            <li><a href="https://iskanebenin.vercel.app/login">Se connecter</a></li>
+            <li><a href="contact.php">Contact</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>اتصل بنا</h4>
+          <h4>Contact</h4>
           <ul class="footer-contact">
-            <li><i class="bi bi-geo-alt"></i> زوغبادجي، كالافي، فون مانديلا سيتي</li>
+            <li><i class="bi bi-geo-alt"></i> Zogbadjè, Calavi, Von Mandela City</li>
             <li><i class="bi bi-telephone"></i> +229 01 66 54 87 62</li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 <strong>إسكان A2S</strong> — جميع الحقوق محفوظة</p>
-        <p>صمّمه <a href="https://amirmoussa01.github.io/moussaamir-cv/" target="_blank">Amir</a></p>
+        <p>© 2026 <strong>Iskane A2S</strong> — Tous droits réservés</p>
+        <p>Designé par <a href="https://amirmoussa01.github.io/moussaamir-cv/" target="_blank">Amir</a></p>
       </div>
     </div>
   </footer>
@@ -1396,9 +1396,9 @@
   <a href="#hero" id="scroll-top"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/aos/aos.js"></script>
+  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <script>
     // ── AOS ──

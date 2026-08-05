@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — Iskane Bénin</title>
-  <meta name="description" content="Contactez l'équipe Iskane A2S Bénin pour toute question sur nos bourses universitaires islamiques.">
-  <link href="assets/img/iskanelogo.png" rel="icon">
+  <title>اتصل بنا — إسكان بنين</title>
+  <meta name="description" content="تواصل مع فريق إسكان A2S بنين لأي استفسار حول منحنا الجامعية الإسلامية.">
+  <link href="/assets/img/iskanelogo.png" rel="icon">
 
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
 
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
 
   <style>
     :root {
@@ -27,8 +27,8 @@
       --gray-100:   #F0F4F2;
       --gray-600:   #4A5E55;
       --gray-900:   #1A2E24;
-      --font-display: 'Playfair Display', Georgia, serif;
-      --font-body:    'DM Sans', sans-serif;
+      --font-display: 'Cairo', 'Amiri', serif;
+      --font-body:    'Cairo', sans-serif;
       --font-arabic:  'Amiri', serif;
     }
 
@@ -72,7 +72,7 @@
     .mobile-nav-toggle { display: none; font-size: 24px; cursor: pointer; color: var(--gray-900); position: relative; z-index: 1001; }
 
     /* ── Sélecteur de langue ── */
-    .lang-switch { position: relative; z-index: 1001; margin-left: 6px; }
+    .lang-switch { position: relative; z-index: 1001; margin-right: 6px; }
     .lang-btn {
       display: flex; align-items: center; gap: 6px;
       background: var(--gray-50); color: var(--gray-600);
@@ -86,7 +86,7 @@
     .lang-switch.open .lang-btn .bi-chevron-down { transform: rotate(180deg); }
 
     .lang-dropdown {
-      position: absolute; top: calc(100% + 10px); right: 0;
+      position: absolute; top: calc(100% + 10px); left: 0;
       background: white; border-radius: 14px;
       box-shadow: 0 8px 30px rgba(0,0,0,0.14);
       border: 1px solid var(--gray-100);
@@ -261,7 +261,7 @@
 
     /* ── Scroll top ── */
     #scroll-top {
-      position: fixed; bottom: 24px; right: 24px; z-index: 999;
+      position: fixed; bottom: 24px; left: 24px; z-index: 999;
       width: 44px; height: 44px; border-radius: 50%;
       background: var(--green); color: white;
       display: flex; align-items: center; justify-content: center;
@@ -309,34 +309,34 @@
   <!-- ── Header ── -->
   <header id="header">
     <div class="container-nav">
-      <a href="index.php" class="logo-wrap">
-        <img src="assets/img/iskanelogo.png" alt="Iskane" class="logo-img">
+      <a href="index-ar.php" class="logo-wrap">
+        <img src="/assets/img/iskanelogo.png" alt="Iskane" class="logo-img">
         <div class="logo-text">
-          <div class="name">Iskane</div>
-          <div class="tagline">A2S · Bénin</div>
+          <div class="name">إسكان</div>
+          <div class="tagline">A2S · بنين</div>
         </div>
       </a>
       <nav class="navmenu" id="navmenu">
         <ul>
-          <li><a href="index.php">Accueil</a></li>
-          <li><a href="index.php#about">À propos</a></li>
-          <li><a href="index.php#conditions">Bourses</a></li>
-          <li><a href="index.php#documents">Documents</a></li>
-          <li><a href="index.php#administration">Administration</a></li>
-          <li><a href="index.php#faq">FAQ</a></li>
-          <li><a href="contact.php" style="color: var(--green); font-weight:600;">Contact</a></li>
-          <li class="btn-cta"><a href="https://iskane.vercel.app/register">S'inscrire</a></li>
+          <li><a href="index-ar.php">الرئيسية</a></li>
+          <li><a href="index-ar.php#about">من نحن</a></li>
+          <li><a href="index-ar.php#conditions">المنح الدراسية</a></li>
+          <li><a href="index-ar.php#documents">الوثائق</a></li>
+          <li><a href="index-ar.php#administration">الإدارة</a></li>
+          <li><a href="index-ar.php#faq">الأسئلة الشائعة</a></li>
+          <li><a href="contact-ar.php" style="color: var(--green); font-weight:600;">اتصل بنا</a></li>
+          <li class="btn-cta"><a href="https://iskane.vercel.app/register">سجّل الآن</a></li>
         </ul>
       </nav>
       <div class="lang-switch" id="langSwitch">
         <button class="lang-btn" id="langToggle" type="button">
           <i class="bi bi-globe2"></i>
-          <span class="lang-label">FR</span>
+          <span class="lang-label">AR</span>
           <i class="bi bi-chevron-down"></i>
         </button>
         <div class="lang-dropdown" id="langDropdown">
-          <a href="contact.php" class="lang-option active"><span class="flag">🇫🇷</span> Français</a>
-          <a href="contact-ar.php" class="lang-option"><span class="flag">🇸🇦</span> العربية</a>
+          <a href="contact.php" class="lang-option"><span class="flag">🇫🇷</span> Français</a>
+          <a href="contact-ar.php" class="lang-option active"><span class="flag">🇸🇦</span> العربية</a>
         </div>
       </div>
       <i class="bi bi-list mobile-nav-toggle" id="mobileToggle"></i>
@@ -347,9 +347,9 @@
     <!-- ── Page Hero ── -->
     <div class="page-hero">
       <div class="page-hero-content" data-aos="fade-up">
-        <div class="page-hero-tag"><i class="bi bi-envelope"></i> Contact</div>
-        <h1>Nous contacter</h1>
-        <p>Une question sur nos bourses ou le processus d'admission ? Notre équipe est là pour vous aider.</p>
+        <div class="page-hero-tag"><i class="bi bi-envelope"></i> اتصل بنا</div>
+        <h1>تواصل معنا</h1>
+        <p>لديك سؤال حول منحنا أو مسار القبول؟ فريقنا هنا لمساعدتك.</p>
       </div>
     </div>
 
@@ -364,31 +364,31 @@
               <div class="info-card">
                 <div class="info-icon"><i class="bi bi-geo-alt"></i></div>
                 <div>
-                  <div class="info-title">Adresse</div>
-                  <div class="info-value">Zogbadjè, Calavi<br>Von Mandela City, Bénin</div>
+                  <div class="info-title">العنوان</div>
+                  <div class="info-value">زوغبادجي، كالافي<br>فون مانديلا سيتي، بنين</div>
                 </div>
               </div>
               <div class="info-card">
                 <div class="info-icon"><i class="bi bi-telephone"></i></div>
                 <div>
-                  <div class="info-title">Téléphone</div>
+                  <div class="info-title">الهاتف</div>
                   <div class="info-value">+229 01 66 54 87 62</div>
                 </div>
               </div>
               <div class="info-card">
                 <div class="info-icon"><i class="bi bi-clock"></i></div>
                 <div>
-                  <div class="info-title">Disponibilité</div>
-                  <div class="info-value">Lundi – Vendredi<br>8h00 – 17h00</div>
+                  <div class="info-title">أوقات العمل</div>
+                  <div class="info-value">الإثنين – الجمعة<br>8:00 – 17:00</div>
                 </div>
               </div>
               <div class="social-card">
-                <h4>Suivez-nous</h4>
+                <h4>تابعنا</h4>
                 <div class="social-links">
-                  <a href="" class="social-link"><i class="bi bi-telegram"></i> Telegram</a>
-                  <a href="" class="social-link"><i class="bi bi-facebook"></i> Facebook</a>
-                  <a href="" class="social-link"><i class="bi bi-instagram"></i> Instagram</a>
-                  <a href="" class="social-link"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                  <a href="" class="social-link"><i class="bi bi-telegram"></i> تيليغرام</a>
+                  <a href="" class="social-link"><i class="bi bi-facebook"></i> فيسبوك</a>
+                  <a href="" class="social-link"><i class="bi bi-instagram"></i> إنستغرام</a>
+                  <a href="" class="social-link"><i class="bi bi-whatsapp"></i> واتساب</a>
                 </div>
               </div>
             </div>
@@ -397,8 +397,8 @@
           <!-- Formulaire -->
           <div data-aos="fade-left">
             <div class="form-card">
-              <h2>Envoyez-nous un message</h2>
-              <p class="form-subtitle">Nous vous répondrons dans les plus brefs délais. باركَ الله فيكم</p>
+              <h2>أرسل لنا رسالة</h2>
+              <p class="form-subtitle">سنرد عليك في أقرب وقت ممكن. بارك الله فيكم</p>
 
               <?php
                 $nom = @$_POST["nom"];
@@ -410,9 +410,9 @@
                 $succes = false;
 
                 if (isset($ajouter)) {
-                  if (empty($nom)) $erreurs[] = "Le nom est requis.";
-                  if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) $erreurs[] = "L'email est invalide.";
-                  if (empty($mesage)) $erreurs[] = "Le message est requis.";
+                  if (empty($nom)) $erreurs[] = "الاسم مطلوب.";
+                  if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) $erreurs[] = "البريد الإلكتروني غير صالح.";
+                  if (empty($mesage)) $erreurs[] = "الرسالة مطلوبة.";
 
                   if (empty($erreurs)) {
                     try {
@@ -422,7 +422,7 @@
                       $succes = true;
                       $nom = $email = $sujet = $mesage = "";
                     } catch (PDOException $e) {
-                      $erreurs[] = "Erreur de connexion. Veuillez réessayer.";
+                      $erreurs[] = "خطأ في الاتصال. يرجى المحاولة مرة أخرى.";
                     }
                   }
                 }
@@ -431,7 +431,7 @@
               <?php if (!empty($erreurs)): ?>
                 <div class="alert-box alert-error">
                   <i class="bi bi-exclamation-circle"></i>
-                  <ul style="margin:0;padding-left:16px;">
+                  <ul style="margin:0;padding-right:16px;">
                     <?php foreach ($erreurs as $e): ?>
                       <li><?= htmlspecialchars($e) ?></li>
                     <?php endforeach; ?>
@@ -442,31 +442,31 @@
               <?php if ($succes): ?>
                 <div class="alert-box alert-success">
                   <i class="bi bi-check-circle"></i>
-                  <span>Votre message a bien été envoyé ! Nous vous répondrons prochainement. Barakallahu Fikum.</span>
+                  <span>تم إرسال رسالتك بنجاح! سنرد عليك قريبًا. بارك الله فيكم.</span>
                 </div>
               <?php endif; ?>
 
               <form method="post">
                 <div class="form-row">
                   <div class="form-group">
-                    <label class="form-label">Votre nom *</label>
-                    <input type="text" name="nom" class="form-control" placeholder="Ex: Moussa Amir" value="<?= htmlspecialchars($nom ?? '') ?>">
+                    <label class="form-label">اسمك *</label>
+                    <input type="text" name="nom" class="form-control" placeholder="مثال: موسى أمير" value="<?= htmlspecialchars($nom ?? '') ?>">
                   </div>
                   <div class="form-group">
-                    <label class="form-label">Votre email *</label>
+                    <label class="form-label">بريدك الإلكتروني *</label>
                     <input type="email" name="email" class="form-control" placeholder="vous@email.com" value="<?= htmlspecialchars($email ?? '') ?>">
                   </div>
                 </div>
                 <div class="form-group">
-                  <label class="form-label">Sujet</label>
-                  <input type="text" name="sujet" class="form-control" placeholder="Ex: Question sur les bourses" value="<?= htmlspecialchars($sujet ?? '') ?>">
+                  <label class="form-label">الموضوع</label>
+                  <input type="text" name="sujet" class="form-control" placeholder="مثال: سؤال حول المنح الدراسية" value="<?= htmlspecialchars($sujet ?? '') ?>">
                 </div>
                 <div class="form-group">
-                  <label class="form-label">Message *</label>
-                  <textarea name="message" class="form-control" placeholder="Décrivez votre demande en détail..."><?= htmlspecialchars($mesage ?? '') ?></textarea>
+                  <label class="form-label">الرسالة *</label>
+                  <textarea name="message" class="form-control" placeholder="اشرح طلبك بالتفصيل..."><?= htmlspecialchars($mesage ?? '') ?></textarea>
                 </div>
                 <button type="submit" name="ajouter" value="ajouter" class="btn-submit">
-                  <i class="bi bi-send"></i> Envoyer le message
+                  <i class="bi bi-send"></i> إرسال الرسالة
                 </button>
               </form>
             </div>
@@ -481,8 +481,8 @@
       <div class="container-main">
         <div class="map-card" data-aos="fade-up">
           <i class="bi bi-pin-map"></i>
-          <p>Foyer Universitaire Iskane A2S</p>
-          <p><strong>Zogbadjè, Calavi — Von Mandela City, Bénin</strong></p>
+          <p>سكن الطلبة الجامعي إسكان A2S</p>
+          <p><strong>زوغبادجي، كالافي — فون مانديلا سيتي، بنين</strong></p>
         </div>
       </div>
     </section>
@@ -492,11 +492,11 @@
   <footer id="footer">
     <div class="container-main">
       <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px; margin-bottom:24px;">
-        <a href="index.php" class="logo-wrap">
-          <img src="assets/img/iskanelogo.png" alt="Iskane" class="logo-img">
+        <a href="index-ar.php" class="logo-wrap">
+          <img src="/assets/img/iskanelogo.png" alt="Iskane" class="logo-img">
           <div class="logo-text">
-            <div class="name" style="color:white;">Iskane A2S</div>
-            <div class="tagline" style="color:rgba(255,255,255,0.5);">Foyer Universitaire Islamique</div>
+            <div class="name" style="color:white;">إسكان A2S</div>
+            <div class="tagline" style="color:rgba(255,255,255,0.5);">سكن الطلبة الجامعي الإسلامي</div>
           </div>
         </a>
         <div class="footer-socials">
@@ -507,16 +507,16 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 <strong style="color:rgba(255,255,255,0.7);">Iskane A2S</strong> — Tous droits réservés</p>
-        <p>Designé par <a href="https://amirmoussa01.github.io/moussaamir-cv/" target="_blank">Amir</a></p>
+        <p>© 2026 <strong style="color:rgba(255,255,255,0.7);">إسكان A2S</strong> — جميع الحقوق محفوظة</p>
+        <p>صمّمه <a href="https://amirmoussa01.github.io/moussaamir-cv/" target="_blank">Amir</a></p>
       </div>
     </div>
   </footer>
 
   <a href="#" id="scroll-top"><i class="bi bi-arrow-up-short"></i></a>
 
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/aos/aos.js"></script>
   <script>
     AOS.init({ duration: 700, once: true, offset: 60 });
 
